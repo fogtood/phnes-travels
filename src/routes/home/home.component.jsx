@@ -1,5 +1,15 @@
 const Home = () => {
-  return <div className="min-h-screen bg-amber-300 text-2xl">Home</div>;
+  return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: "url('src/assets/hero-image.png')",
+        objectFit: "cover",
+      }}
+    >
+      Home
+    </div>
+  );
 };
 
 export default Home;
