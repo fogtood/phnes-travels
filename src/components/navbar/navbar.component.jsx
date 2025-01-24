@@ -187,7 +187,7 @@ const MobileDropdown = ({ name, subLinks }) => {
       </button>
 
       <div
-        className={`mt-2 flex flex-col gap-2 text-sm ${open ? "block" : "hidden"}`}
+        className={`mt-2 flex flex-col gap-2 pl-2 text-sm ${open ? "block" : "hidden"}`}
       >
         {subLinks.map((link) => (
           <Link to={link.link} key={link.link}>
