@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ChevronDown, Menu } from "lucide-react";
 import Brand from "../brand/brand.component";
@@ -72,10 +72,24 @@ const Navbar = () => {
 
 const NavLinks = ({ toggleMobileMenu }) => {
   const [openIndex, setOpenIndex] = useState(null);
+  const dropdownRef = useRef(null);
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setOpenIndex(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -84,7 +98,7 @@ const NavLinks = ({ toggleMobileMenu }) => {
         <Menu />
       </button>
 
-      <div className="hidden items-center gap-8 md:flex">
+      <div className="hidden items-center gap-8 md:flex" ref={dropdownRef}>
         {navbarLinks.map((navbarLink, idx) =>
           navbarLink.subLinks ? (
             <Dropdown
@@ -115,12 +129,14 @@ const Dropdown = ({ idx, name, subLinks, openIndex, handleToggle }) => {
         onClick={() => handleToggle(idx)}
       >
         {name}
-        <ChevronDown />
+        <ChevronDown
+          className={`transition-transform duration-300 ${openIndex === idx ? "rotate-180" : ""}`}
+        />
       </button>
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute top-full z-50 mt-2 w-64 space-y-4 bg-black/50 p-3 text-sm ${openIndex === idx ? "block" : "hidden"}`}
+        className={`absolute top-full z-50 mt-2 w-64 transform space-y-4 bg-black/50 p-3 text-sm transition-all duration-300 ease-in-out ${openIndex === idx ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
         style={{ right: idx === navbarLinks.length - 1 ? "0" : "auto" }}
       >
         {subLinks.map((link) => (
@@ -148,7 +164,11 @@ const MobileSidebar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
         />
       )}
 
-      <div className="fixed top-0 left-0 z-50 h-full w-64 bg-black">
+      <div
+        className={`fixed inset-0 z-50 transform ${
+          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        } flex h-full w-64 flex-col bg-black shadow-lg transition-transform duration-300 ease-in-out`}
+      >
         <div className="p-4">
           <Brand />
         </div>
@@ -183,17 +203,21 @@ const MobileDropdown = ({ name, subLinks }) => {
         onClick={() => setOpen(!open)}
       >
         {name}
-        <ChevronDown />
+        <ChevronDown
+          className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        />
       </button>
 
       <div
-        className={`mt-2 flex flex-col gap-2 pl-2 text-sm ${open ? "block" : "hidden"}`}
+        className={`transition-max-height overflow-hidden duration-300 ease-in-out ${open ? "max-h-screen" : "max-h-0"}`}
       >
-        {subLinks.map((link) => (
-          <Link to={link.link} key={link.link}>
-            {link.name}
-          </Link>
-        ))}
+        <div className="mt-2 flex flex-col gap-2 pl-2 text-sm">
+          {subLinks.map((link) => (
+            <Link to={link.link} key={link.link}>
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
