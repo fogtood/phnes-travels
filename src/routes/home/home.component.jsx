@@ -1,11 +1,22 @@
 import Button from "../../components/button/button.component";
 import Footer from "../../components/footer/footer.component";
 import Navbar from "../../components/navbar/navbar.component";
+import globalMarketAccess from "@/assets/svg/global-market.svg";
+import admissionsOptimization from "@/assets/svg/admission.svg";
+import application from "@/assets/svg/application.svg";
+import visa from "@/assets/svg/visa.svg";
+import uni from "@/assets/images/uni.png";
+import inter from "@/assets/images/inter.png";
+import citizens from "@/assets/images/citizens.png";
+import william from "@/assets/images/william.png";
+import devry from "@/assets/images/devry.png";
+import mpower from "@/assets/images/mpower.png";
+import AIRC from "@/assets/images/AIRC.png";
 
 const Home = () => {
   return (
     <div>
-      <section className="flex h-screen flex-col justify-between bg-[url('src/assets/images/hero-image.png')] bg-cover bg-center">
+      <section className="flex h-screen flex-col justify-between bg-[url('@/assets/images/hero-image.png')] bg-cover bg-center">
         <Navbar />
         <div className="flex flex-1 items-center justify-center text-white">
           <div className="max-w-4xl px-3 text-center">
@@ -40,28 +51,28 @@ const Home = () => {
 
           <div className="mx-auto mt-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <Card
-              imgSrc={"src/assets/svg/global-market.svg"}
+              imgSrc={globalMarketAccess}
               title={"Global Market Access"}
               description={
                 "Connect with thousands of prescreened education agents and marketing affiliates through our comprehensive outreach, onboarding, and management services, expanding your reach and driving results in international recruitment."
               }
             />
             <Card
-              imgSrc={"src/assets/svg/admission.svg"}
+              imgSrc={admissionsOptimization}
               title={"Admissions Optimization"}
               description={
                 "Our customized, secure, automation-driven technology streamlines the admissions process by reducing manual tasks, boosting application completion rates, and simplifying agent management—all with easy API integration. Effortlessly enhance efficiency and focus more on what matters: enrolling the right students."
               }
             />
             <Card
-              imgSrc={"src/assets/svg/application.svg"}
+              imgSrc={application}
               title={"Application Verification & Scoring"}
               description={
                 "By managing the entire process—from fully completed, verified applications to GPA conversion and applicant scoring—we save admissions teams valuable time and resources, allowing them to focus on converting applicants into enrolled students while reducing operational costs."
               }
             />
             <Card
-              imgSrc={"src/assets/svg/visa.svg"}
+              imgSrc={visa}
               title={"F-1 Visa Preparation"}
               description={
                 "Our comprehensive online F-1 visa preparation course equips your international applicants with the skills and confidence they need to succeed in their F-1 visa interview, significantly increasing their confidence and chances of F-1 success, and ensuring a smoother path to enrollment."
@@ -90,22 +101,22 @@ const Home = () => {
 
             <div className="grid place-items-center sm:grid-cols-2 lg:grid-cols-3">
               <div className="flex h-40 w-40 items-center justify-center">
-                <img src="src/assets/images/uni.png" />
+                <img src={uni} />
               </div>
               <div className="flex h-40 w-40 items-center justify-center">
-                <img src="src/assets/images/inter.png" />
+                <img src={inter} />
               </div>
               <div className="flex h-40 w-40 items-center justify-center">
-                <img src="src/assets/images/citizens.png" />
+                <img src={citizens} />
               </div>
               <div className="flex h-40 w-40 items-center justify-center">
-                <img src="src/assets/images/william.png" />
+                <img src={william} />
               </div>
               <div className="flex h-40 w-40 items-center justify-center">
-                <img src="src/assets/images/devry.png" />
+                <img src={devry} />
               </div>
               <div className="flex h-40 w-40 items-center justify-center">
-                <img src="src/assets/images/mpower.png" />
+                <img src={mpower} />
               </div>
             </div>
           </div>
@@ -120,7 +131,7 @@ const Home = () => {
             </Header>
 
             <div className="my-8 flex h-40 w-40 items-center justify-center">
-              <img src="src/assets/images/AIRC.png" />
+              <img src={AIRC} />
             </div>
           </div>
         </div>

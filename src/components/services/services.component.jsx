@@ -1,33 +1,39 @@
+import services1 from "@/assets/svg/services1.svg";
+import services2 from "@/assets/svg/services2.svg";
+import services3 from "@/assets/svg/services3.svg";
+import services4 from "@/assets/svg/services4.svg";
+import services5 from "@/assets/svg/services5.svg";
+
 const services = [
   {
     title: "Digital Process",
     description:
       "We promote client institutions to a database of several thousand agents across the globe through ongoing brand-building market campaigns.",
-    icon: "src/assets/svg/services1.svg",
+    icon: services1,
   },
   {
     title: "Agent Onboarding",
     description:
       "All agent documentation is collected and reviewed before submission to our client.",
-    icon: "src/assets/svg/services2.svg",
+    icon: services2,
   },
   {
     title: "Agent Management",
     description:
       "In-country and remote staff augment client admissions teams support agent activities and monitor performance.",
-    icon: "src/assets/svg/services3.svg",
+    icon: services3,
   },
   {
     title: "Agent Screening",
     description:
       "All agents are prescreened by our team to ensure they meet the high standards our clients expect.",
-    icon: "src/assets/svg/services4.svg",
+    icon: services4,
   },
   {
     title: "Agent Support",
     description:
       "We support our clients in developing custom materials and comprehensive training for agents.",
-    icon: "src/assets/svg/services5.svg",
+    icon: services5,
   },
 ];
 

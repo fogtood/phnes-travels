@@ -3,6 +3,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import TestimonialCard from "../../components/testimonial-card/testimonial-card.component";
 import Services from "../../components/services/services.component";
 import Button from "../../components/button/button.component";
+import about from "@/assets/images/about.png";
+import AIRC from "@/assets/images/AIRC.png";
 
 const About = () => {
   return (
@@ -28,7 +30,7 @@ const About = () => {
               </p>
             </div>
             <div className="mx-auto flex max-w-[80%] items-center justify-center">
-              <img src="src/assets/images/about.png" />
+              <img src={about} />
             </div>
           </div>
         </div>
@@ -145,7 +147,7 @@ const About = () => {
             {/* <img src="src/assets/images/services.png" /> */}
             <Services />
             <div className="mt-8 flex h-40 w-40 items-center justify-center">
-              <img src="src/assets/images/AIRC.png" />
+              <img src={AIRC} />
             </div>
             <p className="text-sm sm:text-base md:text-lg">
               We are deeply committed to upholding the highest ethical standards
