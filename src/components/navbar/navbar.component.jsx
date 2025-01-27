@@ -38,12 +38,10 @@ const Navbar = () => {
     >
       <Brand />
       <NavLinks toggleMobileMenu={toggleMobileMenu} />
-      {isMobileMenuOpen && (
-        <MobileSidebar
-          isMobileMenuOpen={isMobileMenuOpen}
-          setIsMobileMenuOpen={setIsMobileMenuOpen}
-        />
-      )}
+      <MobileSidebar
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
     </div>
   );
 };
@@ -95,9 +93,13 @@ const MobileSidebar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
         <div className="p-4">
           <Brand />
         </div>
-        <div className="flex flex-col gap-4 p-4">
+        <div className="flex flex-col gap-6 p-4">
           {navbarLinks.map((navbarLink, idx) => (
-            <NavLink key={idx} to={navbarLink.link}>
+            <NavLink
+              key={idx}
+              to={navbarLink.link}
+              className={({ isActive }) => (isActive ? "font-semibold" : "")}
+            >
               {navbarLink.name}
             </NavLink>
           ))}
