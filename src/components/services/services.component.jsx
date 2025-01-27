@@ -3,6 +3,7 @@ import services2 from "@/assets/svg/services2.svg";
 import services3 from "@/assets/svg/services3.svg";
 import services4 from "@/assets/svg/services4.svg";
 import services5 from "@/assets/svg/services5.svg";
+import vector1 from "@/assets/svg/vector1.svg";
 
 const services = [
   {
@@ -51,7 +52,7 @@ const Services = () => {
               {services[0].description}
             </p>
             <div className="absolute top-10 -right-25 hidden xl:block">
-              <img src="src/assets/svg/vector1.svg" />
+              <img src={vector1} />
             </div>
           </div>
           <div className="flex flex-col items-center space-y-4 md:-mt-10">
