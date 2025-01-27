@@ -1,4 +1,5 @@
 import Button from "../../components/button/button.component";
+import Footer from "../../components/footer/footer.component";
 import Navbar from "../../components/navbar/navbar.component";
 
 const Home = () => {
@@ -124,11 +125,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
-
-export default Home;
 
 const Card = ({ imgSrc, title, description }) => {
   return (
@@ -144,7 +144,7 @@ const Card = ({ imgSrc, title, description }) => {
   );
 };
 
-const Header = ({ children, title }) => {
+export const Header = ({ children, title }) => {
   return (
     <div className="mx-auto max-w-4xl text-center">
       <h2 className="mx-auto max-w-3xl text-xl font-bold uppercase sm:text-2xl md:text-3xl lg:text-4xl">
@@ -154,3 +154,5 @@ const Header = ({ children, title }) => {
     </div>
   );
 };
+
+export default Home;

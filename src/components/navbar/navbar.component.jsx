@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { ChevronDown, Menu } from "lucide-react";
 import Brand from "../brand/brand.component";
 
@@ -51,13 +51,18 @@ const navbarLinks = [
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <div className="flex items-center justify-between px-3 pt-4 text-white sm:px-6">
+    <div
+      className={`flex items-center justify-between px-3 pt-4 ${isHome ? "text-white" : "border-b border-[#3030304D] bg-white"} sm:px-6`}
+    >
       <Brand />
       <NavLinks toggleMobileMenu={toggleMobileMenu} />
       {isMobileMenuOpen && (
@@ -121,6 +126,10 @@ const NavLinks = ({ toggleMobileMenu }) => {
 };
 
 const Dropdown = ({ idx, name, subLinks, openIndex, handleToggle }) => {
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
+
   return (
     <div className="relative">
       <button
@@ -136,7 +145,7 @@ const Dropdown = ({ idx, name, subLinks, openIndex, handleToggle }) => {
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute top-full z-50 mt-2 w-64 transform space-y-4 bg-black/50 p-3 text-sm transition-all duration-300 ease-in-out ${openIndex === idx ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
+        className={`absolute top-full z-50 mt-2 w-64 transform space-y-4 bg-black/50 p-3 text-sm transition-all duration-300 ease-in-out ${!isHome && "text-white"} ${openIndex === idx ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
         style={{ right: idx === navbarLinks.length - 1 ? "0" : "auto" }}
       >
         {subLinks.map((link) => (
@@ -152,6 +161,9 @@ const Dropdown = ({ idx, name, subLinks, openIndex, handleToggle }) => {
 export default Navbar;
 
 const MobileSidebar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
     <>
       {/* Overlay */}
@@ -167,7 +179,7 @@ const MobileSidebar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       <div
         className={`fixed inset-0 z-50 transform ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } flex h-full w-64 flex-col bg-black shadow-lg transition-transform duration-300 ease-in-out`}
+        } flex h-full w-64 flex-col bg-black shadow-lg transition-transform duration-300 ease-in-out ${!isHome && "text-white"}`}
       >
         <div className="p-4">
           <Brand />
