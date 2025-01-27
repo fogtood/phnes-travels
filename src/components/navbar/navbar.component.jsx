@@ -13,11 +13,11 @@ const navbarLinks = [
     subLinks: [
       {
         name: "International Admission Optimization & Data Integration and Security",
-        link: "/international-admission-optimization",
+        link: "/solutions",
       },
       {
         name: "F-1 Visa Preparations",
-        link: "/visa-preparations",
+        link: "solutions/f1-visa-preparations",
       },
     ],
   },
