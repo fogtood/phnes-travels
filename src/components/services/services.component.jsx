@@ -3,7 +3,7 @@ import services2 from "@/assets/svg/services2.svg";
 import services3 from "@/assets/svg/services3.svg";
 import services4 from "@/assets/svg/services4.svg";
 import services5 from "@/assets/svg/services5.svg";
-import vector1 from "@/assets/svg/vector1.svg";
+import vector1 from "../../assets/svg/Vector1.svg";
 
 const services = [
   {
