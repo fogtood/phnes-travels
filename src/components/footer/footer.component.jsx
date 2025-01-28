@@ -13,18 +13,16 @@ const Footer = () => {
             <h2 className="mb-6 text-lg font-bold sm:text-xl">Company</h2>
             <ul className="space-y-5">
               <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
                 <Link to="/about-us">About us</Link>
               </li>
               <li>
-                <Link to="/data-integration-security">
-                  Data Integration and Security
-                </Link>
+                <Link to="/resources">Resources</Link>
               </li>
               <li>
                 <Link to="/contact-us">Contact us</Link>
-              </li>
-              <li>
-                <Link to="/client">Client</Link>
               </li>
             </ul>
           </div>
@@ -32,15 +30,15 @@ const Footer = () => {
             <h2 className="mb-6 text-lg font-bold sm:text-xl">Solutions</h2>
             <ul className="space-y-5">
               <li>
-                <Link to="/market-entry-scale">Market Entry and Scale</Link>
+                <Link to="/resources">Market Entry and Scale</Link>
               </li>
               <li>
-                <Link to="/international-admissions-optimization">
+                <Link to="/resources">
                   International Admissions Optimization
                 </Link>
               </li>
               <li>
-                <Link to="/visa-preparation">F-1 Visa Preparation</Link>
+                <Link to="/resources">F-1 Visa Preparation</Link>
               </li>
             </ul>
           </div>
@@ -48,15 +46,10 @@ const Footer = () => {
             <h2 className="mb-6 text-lg font-bold sm:text-xl">Resources</h2>
             <ul className="space-y-5">
               <li>
-                <Link to="/industry-insights-news">
-                  Industry Insights & News
-                </Link>
+                <Link to="/policies">Terms Conditions</Link>
               </li>
               <li>
-                <Link to="/terms-conditions">Terms Conditions</Link>
-              </li>
-              <li>
-                <Link to="/privacy-policy">Privacy and Policy</Link>
+                <Link to="/policies">Privacy and Policy</Link>
               </li>
             </ul>
           </div>
