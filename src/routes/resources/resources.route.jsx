@@ -9,7 +9,7 @@ import resourcesImage3 from "@/assets/images/resources3.png";
 import aws from "@/assets/images/aws.png";
 import hecvat from "@/assets/images/hecvat.png";
 import pc from "@/assets/images/pc.png";
-import thumbnail from "@/assets/images/thumbnail.png";
+import thumbnail from "../../assets/images/Thumbnail.png";
 import pinkInnov from "@/assets/images/Pink-Innovation-Design-Thinking-Process-Graph.png";
 import pc2 from "@/assets/images/pc2.png";
 
