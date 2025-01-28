@@ -1,23 +1,11 @@
-import { useRef } from "react";
 import { Header } from "../home/home.component";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import TestimonialCard from "../../components/testimonial-card/testimonial-card.component";
 import Services from "../../components/services/services.component";
+import Testimonials from "../../components/testimonial-card/testimonial-card.component";
 import Button from "../../components/button/button.component";
 import about from "@/assets/images/about.png";
 import AIRC from "@/assets/images/AIRC.png";
 
 const About = () => {
-  const scrollRef = useRef(null);
-
-  const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
-  };
-
   return (
     <>
       <section className="lg:py-none flex min-h-[calc(100vh-76px)] flex-col items-center justify-center px-6 py-10 sm:px-12">
@@ -174,30 +162,7 @@ const About = () => {
           <h2 className="text-center text-lg font-bold uppercase md:text-2xl lg:text-3xl">
             Agent Testimonials
           </h2>
-          <div
-            ref={scrollRef}
-            className="scrollbar-hide mt-4 flex items-center gap-5 overflow-auto p-5 px-2"
-          >
-            {[...Array(5)].map((_, idx) => (
-              <TestimonialCard key={idx} />
-            ))}
-          </div>
-          <div className="flex items-center justify-end gap-2">
-            <button
-              type="button"
-              className="cursor-pointer rounded-full bg-black p-1 text-white"
-              onClick={scrollLeft}
-            >
-              <ChevronLeft />
-            </button>
-            <button
-              type="button"
-              className="cursor-pointer rounded-full bg-black p-1 text-white"
-              onClick={scrollRight}
-            >
-              <ChevronRight />
-            </button>
-          </div>
+          <Testimonials />
 
           <div className="mt-24 text-center">
             <h2 className="mb-6 text-lg font-bold uppercase sm:text-xl md:text-2xl lg:text-3xl">
