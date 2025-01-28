@@ -99,6 +99,7 @@ const MobileSidebar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
               key={idx}
               to={navbarLink.link}
               className={({ isActive }) => (isActive ? "font-semibold" : "")}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               {navbarLink.name}
             </NavLink>
