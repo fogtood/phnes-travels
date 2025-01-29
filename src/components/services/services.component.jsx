@@ -4,6 +4,10 @@ import services3 from "@/assets/svg/services3.svg";
 import services4 from "@/assets/svg/services4.svg";
 import services5 from "@/assets/svg/services5.svg";
 import vector1 from "../../assets/svg/Vector1.svg";
+import vector2 from "../../assets/svg/Vector2.svg";
+import vector3 from "../../assets/svg/Vector3.svg";
+import vector4 from "../../assets/svg/Vector4.svg";
+import vector5 from "../../assets/svg/Vector5.svg";
 
 const services = [
   {
@@ -55,7 +59,7 @@ const Services = () => {
               <img src={vector1} />
             </div>
           </div>
-          <div className="flex flex-col items-center space-y-4 md:-mt-10">
+          <div className="relative flex flex-col items-center space-y-4 md:-mt-10">
             <div className="flex h-20 w-20 items-center justify-center rounded-lg text-xl">
               <img src={services[1].icon} />
             </div>
@@ -63,8 +67,11 @@ const Services = () => {
             <p className="text-sm md:text-base lg:max-w-[20rem]">
               {services[1].description}
             </p>
+            <div className="absolute top-10 -right-30 hidden xl:block">
+              <img src={vector2} />
+            </div>
           </div>
-          <div className="flex flex-col items-center space-y-4">
+          <div className="relative flex flex-col items-center space-y-4">
             <div className="flex h-20 w-20 items-center justify-center rounded-lg text-xl">
               <img src={services[2].icon} />
             </div>
@@ -72,10 +79,13 @@ const Services = () => {
             <p className="text-sm md:text-base lg:max-w-[20rem]">
               {services[2].description}
             </p>
+            <div className="absolute -bottom-32 hidden xl:block">
+              <img src={vector5} />
+            </div>
           </div>
         </div>
         <div className="mx-auto mt-10 grid w-4/5 grid-cols-1 gap-x-6 gap-y-16 text-center md:grid-cols-2">
-          <div className="flex flex-col items-center space-y-4">
+          <div className="relative flex flex-col items-center space-y-4">
             <div className="flex h-20 w-20 items-center justify-center rounded-lg text-xl">
               <img src={services[3].icon} />
             </div>
@@ -83,8 +93,11 @@ const Services = () => {
             <p className="text-sm md:text-base lg:max-w-[20rem]">
               {services[3].description}
             </p>
+            <div className="absolute -top-5 left-12 hidden xl:block">
+              <img src={vector3} />
+            </div>
           </div>
-          <div className="flex flex-col items-center space-y-4">
+          <div className="relative flex flex-col items-center space-y-4">
             <div className="flex h-20 w-20 items-center justify-center rounded-lg text-xl">
               <img src={services[4].icon} />
             </div>
@@ -92,6 +105,9 @@ const Services = () => {
             <p className="text-sm md:text-base lg:max-w-[20rem]">
               {services[4].description}
             </p>
+            <div className="absolute top-18 -left-24 hidden xl:block">
+              <img src={vector4} />
+            </div>
           </div>
         </div>
       </div>
