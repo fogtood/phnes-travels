@@ -4,6 +4,7 @@ import Navigation from "./routes/navigation/navigation.route";
 import About from "./routes/about/about.route";
 import Resources from "./routes/resources/resources.route";
 import Contact from "./routes/contact/contact.route";
+import Policies from "./routes/policies/policies.route";
 import "./App.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="about-us" element={<About />} />
           <Route path="resources" element={<Resources />} />
           <Route path="contact-us" element={<Contact />} />
+          <Route path="policies" element={<Policies />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/" replace />} />
