@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/button/button.component";
 import Footer from "../../components/footer/footer.component";
 import Navbar from "../../components/navbar/navbar.component";
@@ -14,6 +15,8 @@ import mpower from "@/assets/images/mpower.png";
 import AIRC from "@/assets/images/AIRC.png";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <section className="flex h-screen flex-col justify-between bg-[url('@/assets/images/hero-image.png')] bg-cover bg-center">
@@ -30,7 +33,11 @@ const Home = () => {
               new possibilities in international recruitment with Catalyst GEM.
             </p>
             <div className="mt-8 flex justify-center">
-              <Button buttonType="primary" type="button">
+              <Button
+                buttonType="primary"
+                type="button"
+                onClick={() => navigate("/contact-us")}
+              >
                 Book a Demo
               </Button>
             </div>

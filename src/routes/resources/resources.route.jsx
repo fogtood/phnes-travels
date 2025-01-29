@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Header } from "../home/home.component";
 import CheckIcon from "../../components/check-icon/check-icon.component";
 import Testimonials from "../../components/testimonial-card/testimonial-card.component";
@@ -14,6 +15,8 @@ import pinkInnov from "@/assets/images/Pink-Innovation-Design-Thinking-Process-G
 import pc2 from "@/assets/images/pc2.png";
 
 const Resources = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="container mx-auto">
       <section className="px-6 py-20">
@@ -278,7 +281,9 @@ const Resources = () => {
             Schedule a complimentary demo of our solution today and learn how we
             can supercharge your international admissions process.
           </p>
-          <Button buttonType="primary">Book a Call</Button>
+          <Button buttonType="primary" onClick={() => navigate("/contact-us")}>
+            Book a Call
+          </Button>
         </div>
       </section>
     </div>

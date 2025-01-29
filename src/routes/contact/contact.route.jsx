@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
 import Button from "../../components/button/button.component";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="container mx-auto px-6">
       <section className="flex min-h-[calc(100vh-76px)] flex-col justify-center">
@@ -46,7 +49,14 @@ const Contact = () => {
             />
           </label>
           <div className="flex justify-end">
-            <Button type="submit" buttonType={"primary"}>
+            <Button
+              type="submit"
+              buttonType={"primary"}
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("/");
+              }}
+            >
               Leave a message for us
             </Button>
           </div>

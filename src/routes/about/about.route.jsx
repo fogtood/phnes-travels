@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Header } from "../home/home.component";
 import Services from "../../components/services/services.component";
 import Testimonials from "../../components/testimonial-card/testimonial-card.component";
@@ -6,6 +7,8 @@ import about from "@/assets/images/about.png";
 import AIRC from "@/assets/images/AIRC.png";
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="lg:py-none flex min-h-[calc(100vh-76px)] flex-col items-center justify-center px-6 py-10 sm:px-12">
@@ -178,7 +181,12 @@ const About = () => {
               partnership focused on your success. Let’s unlock your potential
               in international recruitment together!
             </p>
-            <Button buttonType={"primary"}>Contact us</Button>
+            <Button
+              buttonType={"primary"}
+              onClick={() => navigate("/contact-us")}
+            >
+              Contact us
+            </Button>
           </div>
         </div>
       </section>
