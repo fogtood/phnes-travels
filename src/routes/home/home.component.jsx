@@ -91,16 +91,16 @@ const Home = () => {
 
       <section className="px-6 py-16 sm:px-12">
         <div className="container mx-auto">
-          <Header title={"Our Domain Expertise"}>
+          {/* <Header title={"Our Domain Expertise"}>
             Backed by decades of experience and deep expertise, our team
             understands the unique challenges U.S. universities face in
             expanding international enrollment. We specialize in tackling these
             critical issues to deliver a competitive edge, reduce manual
             workload, and optimize enrollment conversion.
-          </Header>
+          </Header> */}
 
           <div className="my-24">
-            <Header title={"Our Clients & Partners"}>
+            <Header title={"Some Of Our Clients & Partners"}>
               Our clients and partners encompass the entire international
               student recruitment ecosystem, including universities, education
               agents, content providers, and student loan providers.
