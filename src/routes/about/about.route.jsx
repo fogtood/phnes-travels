@@ -17,18 +17,10 @@ const About = () => {
             <div className="text-center md:text-start">
               <h1 className="text-2xl font-bold md:text-4xl">ABOUT US</h1>
               <p className="my-4 text-sm sm:text-base md:text-lg">
-                We are a Florida-based software and services company with
-                decades of expertise in international admissions and student
-                recruitment. Our dedicated team partners with clients to
-                implement cost-effective, scalable strategies that expand their
-                reach and impact in international student recruitment.
-              </p>
-              <p className="text-sm sm:text-base md:text-lg">
-                We are a Florida-based software and services company with
-                decades of expertise in international admissions and student
-                recruitment. Our dedicated team partners with clients to
-                implement cost-effective, scalable strategies that expand their
-                reach and impact in international student recruitment.
+                SS-Global will help you apply to any UK, US, and other countries
+                universities. Our consultants specialise in undergraduate,
+                postgraduate and PhD applications. Arrange your journey towards
+                studying in any part of the world.
               </p>
             </div>
             <div className="mx-auto flex max-w-[80%] items-center justify-center">
