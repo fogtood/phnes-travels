@@ -4,11 +4,11 @@ import Brand from "../brand/brand.component";
 const Footer = () => {
   return (
     <footer className="bg-[#133837] text-white/80">
-      <div className="mx-auto grid max-w-[90%] gap-y-5 py-16 md:grid-cols-3">
+      <div className="mx-auto grid max-w-[94%] gap-y-5 py-16 md:grid-cols-4">
         <div className="flex-1 shrink-0">
           <Brand />
         </div>
-        <div className="col-span-1 grid gap-10 text-sm text-white sm:grid-cols-2 md:col-span-2 lg:grid-cols-3">
+        <div className="col-span-1 grid gap-10 text-sm text-white sm:grid-cols-2 md:col-span-3 lg:grid-cols-4">
           <div>
             <h2 className="mb-6 text-lg font-bold sm:text-xl">Company</h2>
             <ul className="space-y-5">
@@ -50,6 +50,35 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/policies">Privacy and Policy</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-5">
+            <h2 className="mb-6 text-lg font-bold sm:text-xl">Support</h2>
+            <ul className="space-y-5">
+              <li
+                className="cursor-pointer"
+                onClick={() => (window.location.href = "tel:+441708606102")}
+              >
+                <p>+44 1708606102</p>
+              </li>
+              <li
+                className="cursor-pointer"
+                onClick={() => (window.location.href = "tel:+447440035769")}
+              >
+                <p>+44 7440035769</p>
+              </li>
+              <li
+                className="cursor-pointer"
+                onClick={() =>
+                  (window.location.href =
+                    "mailto:lynda@study.caresignificant.co.uk")
+                }
+              >
+                <p>lynda@study.caresignificant.co.uk</p>
+              </li>
+              <li>
+                <p>11 Denholme Walk, Rainham, London</p>
               </li>
             </ul>
           </div>

@@ -1,7 +1,14 @@
 const FloatingIcon = () => {
+  const openWhatsApp = () => {
+    window.open("https://wa.me/+447440035769", "_blank");
+  };
+
   return (
     <div className="fixed bottom-10 left-5 z-[9999px] flex items-center gap-2">
-      <button className="cursor-pointer rounded-full bg-green-500 p-4 text-white">
+      <button
+        className="cursor-pointer rounded-full bg-green-500 p-4 text-white"
+        onClick={openWhatsApp}
+      >
         <svg
           fill="#ffff"
           height="28px"
