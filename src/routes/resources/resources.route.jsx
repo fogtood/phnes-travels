@@ -244,7 +244,7 @@ const Resources = () => {
               </p>
             </div>
           </div>
-          <Testimonials />
+          {/* <Testimonials /> */}
         </div>
         <div className="my-16">
           <h2 className="text-center text-xl font-bold uppercase sm:text-2xl md:text-3xl lg:text-4xl">
@@ -270,7 +270,7 @@ const Resources = () => {
               </p>
             </div>
           </div>
-          <Testimonials />
+          {/* <Testimonials /> */}
         </div>
 
         <div className="my-24 text-center">

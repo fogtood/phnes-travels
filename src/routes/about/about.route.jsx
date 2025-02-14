@@ -154,10 +154,10 @@ const About = () => {
         </div>
 
         <div className="my-20">
-          <h2 className="text-center text-lg font-bold uppercase md:text-2xl lg:text-3xl">
+          {/* <h2 className="text-center text-lg font-bold uppercase md:text-2xl lg:text-3xl">
             Agent Testimonials
           </h2>
-          <Testimonials />
+          <Testimonials /> */}
 
           <div className="mt-24 text-center">
             <h2 className="mb-6 text-lg font-bold uppercase sm:text-xl md:text-2xl lg:text-3xl">

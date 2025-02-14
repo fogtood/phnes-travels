@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex items-center justify-between px-3 pt-4 ${isHome ? "text-white" : "border-b border-[#3030304D] bg-white"} sm:px-6`}
+      className={`flex items-center justify-between px-3 py-4 ${isHome ? "text-white" : "border-b border-[#3030304D] bg-white"} sm:px-6`}
     >
       <Brand />
       <NavLinks toggleMobileMenu={toggleMobileMenu} />
