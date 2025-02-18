@@ -179,7 +179,7 @@ const Resources = () => {
         <p className="text-sm sm:text-base md:text-lg">
           In 2024, F-1 visa denials continued to pose a significant challenge,
           with over 240,000 international students unable to secure their visas.
-          This trend represents an ongoing cost to the U.S. economy, estimated
+          This trend represents an ongoing cost to the U.K. economy, estimated
           at $7 billion annually, and a substantial impact on higher education
           institutions. How much are F-1 visa denials affecting your
           institution’s enrollment and revenue goals? Enhancing visa approval

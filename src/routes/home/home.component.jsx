@@ -27,10 +27,11 @@ const Home = () => {
               Gain a Competitive Edge in International Admissions
             </h1>
             <p className="mx-auto mt-4 max-w-3xl text-sm sm:text-base md:text-lg">
-              Empowering U.S. international admissions teams with expert-driven
+              Empowering U.K. international admissions teams with expert-driven
               software and services to expand global reach, streamline
               admissions processes, and boost F-1 visa approval rates. Unlock
-              new possibilities in international recruitment with Catalyst GEM.
+              new possibilities in international recruitment with Significant
+              Study Group.
             </p>
             <div className="mt-8 flex justify-center">
               <Button
@@ -91,6 +92,24 @@ const Home = () => {
 
       <section className="px-6 py-16 sm:px-12">
         <div className="container mx-auto">
+          <div className="space-y-8 text-center">
+            <Header
+              title={"Option to study in engLand, ireland, scotland & wales."}
+            >
+              SI-UK is a trusted UK university partner, and our study abroad
+              consultants will ensure you find a place on the right course to
+              study in the UK. Experienced education consultants can assist with
+              your application for foundation, undergraduate or postgraduate
+              courses.
+            </Header>
+            <Button
+              buttonType={"primary"}
+              onClick={() => navigate("/contact-us")}
+            >
+              Book a free consultation
+            </Button>
+          </div>
+
           {/* <Header title={"Our Domain Expertise"}>
             Backed by decades of experience and deep expertise, our team
             understands the unique challenges U.S. universities face in

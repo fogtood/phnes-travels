@@ -39,7 +39,7 @@ const About = () => {
                   Vision Statement
                 </h2>
                 <p>
-                  Our vision is to be the leading partner for U.S. higher
+                  Our vision is to be the leading partner for U.K. higher
                   education institutions, empowering them to expand global
                   outreach and gain a competitive edge through innovative
                   technology and service solutions.
