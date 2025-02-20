@@ -168,20 +168,20 @@ const Resources = () => {
 
       <section className="my-20 px-6">
         <h1 className="text-2xl font-bold uppercase md:text-4xl">
-          F-1 Visa Preparation for Success
+           Visa Preparation for Success
         </h1>
         <p className="my-6 text-sm text-[#2B58F7] sm:text-base md:text-lg">
           International students who complete our personalized visa preparation
-          and training program increase their chances of F-1 visa approval by
+          and training program increase their chances of  visa approval by
           220%, thanks to our proven, expert-led approach tailored to address
-          the specific challenges of the F-1 interview process.
+          the specific challenges of the  interview process.
         </p>
         <p className="text-sm sm:text-base md:text-lg">
-          In 2024, F-1 visa denials continued to pose a significant challenge,
+          In 2024,  visa denials continued to pose a significant challenge,
           with over 240,000 international students unable to secure their visas.
           This trend represents an ongoing cost to the U.K. economy, estimated
           at $7 billion annually, and a substantial impact on higher education
-          institutions. How much are F-1 visa denials affecting your
+          institutions. How much are  visa denials affecting your
           institution’s enrollment and revenue goals? Enhancing visa approval
           rates is a proven way to boost enrollment, improve retention, and
           strengthen your financial outcomes.
@@ -196,11 +196,11 @@ const Resources = () => {
 
         <div className="my-24 text-center">
           <h2 className="mb-6 text-lg font-bold uppercase sm:text-xl md:text-2xl lg:text-3xl">
-            Our Comprehensive F-1 Training Process
+            Our Comprehensive  Training Process
           </h2>
           <p className="mt-6 mb-10 text-sm sm:text-base md:text-lg">
-            Our proven F-1 visa preparation method equips students with the
-            knowledge and confidence needed to successfully navigate their F-1
+            Our proven  visa preparation method equips students with the
+            knowledge and confidence needed to successfully navigate their 
             visa interview and secure their visa
           </p>
           <div className="my-10">
@@ -221,7 +221,7 @@ const Resources = () => {
           </div>
         </div>
         <div>
-          <Header title={"F-1 Visa Course Feedback"}>
+          <Header title={" Visa Course Feedback"}>
             In 2024, 2,700 international students completed over 26,000 lessons.
           </Header>
           <div className="my-5 grid gap-8 text-center md:grid-cols-2 md:text-start">

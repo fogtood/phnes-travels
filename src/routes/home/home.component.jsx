@@ -12,7 +12,8 @@ import citizens from "@/assets/images/citizens.png";
 import william from "@/assets/images/william.png";
 import devry from "@/assets/images/devry.png";
 import mpower from "@/assets/images/mpower.png";
-import AIRC from "@/assets/images/AIRC.png";
+import uniOfgreenwich from "@/assets/images/greenwich.png";
+import uniOfEastLondon from "@/assets/images/university_east_london_logo.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,11 +28,11 @@ const Home = () => {
               Gain a Competitive Edge in International Admissions
             </h1>
             <p className="mx-auto mt-4 max-w-3xl text-sm sm:text-base md:text-lg">
-              Empowering U.K. international admissions teams with expert-driven
-              software and services to expand global reach, streamline
-              admissions processes, and boost F-1 visa approval rates. Unlock
-              new possibilities in international recruitment with Significant
-              Study Group.
+              Empowering U.K, U.S and Canada international admissions teams with
+              expert-driven software and services to expand global reach,
+              streamline admissions processes, and boost visa approval rates.
+              Unlock new possibilities in international recruitment with
+              Significant Study Group.
             </p>
             <div className="mt-8 flex justify-center">
               <Button
@@ -81,9 +82,9 @@ const Home = () => {
             />
             <Card
               imgSrc={visa}
-              title={"F-1 Visa Preparation"}
+              title={" Visa Preparation"}
               description={
-                "Our comprehensive online F-1 visa preparation course equips your international applicants with the skills and confidence they need to succeed in their F-1 visa interview, significantly increasing their confidence and chances of F-1 success, and ensuring a smoother path to enrollment."
+                "Our comprehensive online  visa preparation course equips your international applicants with the skills and confidence they need to succeed in their  visa interview, significantly increasing their confidence and chances of  success, and ensuring a smoother path to enrollment."
               }
             />
           </div>
@@ -96,11 +97,11 @@ const Home = () => {
             <Header
               title={"Option to study in engLand, ireland, scotland & wales."}
             >
-              SI-UK is a trusted UK university partner, and our study abroad
-              consultants will ensure you find a place on the right course to
-              study in the UK. Experienced education consultants can assist with
-              your application for foundation, undergraduate or postgraduate
-              courses.
+              Significant Study Global (SS-global) is a trusted UK university
+              partner, and our study abroad consultants will ensure you find a
+              place on the right course to study in the UK. Experienced
+              education consultants can assist with your application for
+              foundation, undergraduate or postgraduate courses.
             </Header>
             <Button
               buttonType={"primary"}
@@ -144,10 +145,16 @@ const Home = () => {
               <div className="flex h-40 w-40 items-center justify-center">
                 <img src={mpower} />
               </div>
+              <div className="flex h-40 w-40 items-center justify-center">
+                <img src={uniOfgreenwich} />
+              </div>
+              <div className="flex h-40 w-40 items-center justify-center">
+                <img src={uniOfEastLondon} />
+              </div>
             </div>
           </div>
 
-          <div className="my-16 grid place-items-center">
+          {/* <div className="my-16 grid place-items-center">
             <Header title={"Industry Memberships"}>
               We are proud members of the American International Recruitment
               Council (AIRC), a non-profit membership association of secondary
@@ -159,7 +166,7 @@ const Home = () => {
             <div className="my-8 flex h-40 w-40 items-center justify-center">
               <img src={AIRC} />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />

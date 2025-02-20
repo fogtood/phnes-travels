@@ -38,7 +38,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/resources">F-1 Visa Preparation</Link>
+                <Link to="/resources"> Visa Preparation</Link>
               </li>
             </ul>
           </div>
